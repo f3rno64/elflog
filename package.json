@@ -1,6 +1,6 @@
 {
   "name": "@f3rno64/logger",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A tiny & highly configurable library that returns a custom Signale instance, with enums for log levels, colors and badges.",
   "keywords": [
     "enums",
