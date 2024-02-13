@@ -1,5 +1,5 @@
 {
-  "name": "@f3rno64/logger",
+  "name": "elflog",
   "version": "1.2.0",
   "description": "A tiny & highly configurable library that returns a custom Signale instance, with enums for log levels, colors and badges.",
   "keywords": [
@@ -23,11 +23,11 @@
     "error-reporting",
     "console-logging"
   ],
-  "homepage": "https://github.com/f3rno64/logger",
+  "homepage": "https://github.com/f3rno64/elflog",
   "bugs": {
-    "url": "https://github.com/f3rno64/logger/issues"
+    "url": "https://github.com/f3rno64/elflog/issues"
   },
-  "repository": "https://github.com/f3rno64/logger",
+  "repository": "https://github.com/f3rno64/elflog",
   "license": "MIT",
   "author": "Cris Mihalache <f3rno64@gmail.com>",
   "main": "dist/index.js",
