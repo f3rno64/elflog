@@ -2,7 +2,8 @@
   "root": true,
   "env": {
     "node": true,
-    "es2024": true
+    "es2024": true,
+    "browser": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -14,6 +15,25 @@
     "allowAutomaticSingleRunInference": true,
     "warnOnUnsupportedTypeScriptVersion": true
   },
+  "settings": {
+     "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ],
+        "extensions": [
+          ".js",
+          ".ts",
+          ".tsx",
+          ".jsx"
+        ],
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ]
+      }
+    }
+ },
   "plugins": [
     "pure",
     "github",
@@ -45,21 +65,22 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "rules": {
-    "indent": ["error", 2],
+    "indent": [
+      "error",
+      2
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "no-shadow": 0,
     "i18n-text/no-en": 0,
-    "no-invalid-this": 0,
-    "semi": ["error", "never"],
-    "import/no-namespace": 0,
-    "quotes": ["error", "single"],
     "github/array-foreach": 0,
-    "no-secrets/no-secrets": "error",
-    "linebreak-style": ["error", "unix"],
-    "lodash/prefer-lodash-method": 0,
-    "sonarjs/no-duplicate-string": 0,
-    "@typescript-eslint/no-unsafe-call": 0,
-    "sonarjs/no-nested-template-literals": 0,
-    "@typescript-eslint/no-explicit-any": 0,
-    "filenames/match-regex": [2, "^[a-z_]+$", true],
-    "@typescript-eslint/no-unsafe-assignment": 0
+    "@typescript-eslint/no-shadow": "warn",
+    "filenames/match-regex": [2, "^[a-z_]+$", true]
   }
 }
